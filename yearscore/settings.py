@@ -14,11 +14,12 @@ SECRET_KEY = os.environ.get(
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 ALLOWED_HOSTS = os.environ.get(
     "ALLOWED_HOSTS",
-    "localhost,127.0.0.1,build2026.onrender.com"
+    "localhost,127.0.0.1,build2026.onrender.com,yearscore.onrender.com"
 ).split(",")
 
 CSRF_TRUSTED_ORIGINS = [
     "https://build2026.onrender.com",
+    "https://yearscore.onrender.com",
 ]
 
 # =========================
